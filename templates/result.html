@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Cyber Attack Detection Result</h2>
+
+    <div class="prediction-box">
+        <h1>{{ prediction }}</h1>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="resultChart" width="400" height="200"></canvas>
+    </div>
+
+    <div class="buttons">
+
+        <a href="/predict">
+            <button class="btn">Try Again</button>
+        </a>
+
+        <a href="/">
+            <button class="btn home">Home</button>
+        </a>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/result.js') }}"></script>
+
+</body>
+
+</html>
