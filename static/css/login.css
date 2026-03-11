@@ -1,10 +1,93 @@
 body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#0b0f24,#1c2355);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    overflow:hidden;
+}
+
+/* cyber animated grid */
+body::before{
+    content:"";
+    position:absolute;
+    width:200%;
+    height:200%;
+    background-image: 
+        linear-gradient(rgba(0,255,200,0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,255,200,0.1) 1px, transparent 1px);
+    background-size:60px 60px;
+    animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove{
+    from{ transform:translate(0,0); }
+    to{ transform:translate(-60px,-60px); }
+}
+
+/* login card */
+.container{
+    position:relative;
+    z-index:2;
+    background:#12163a;
+    padding:50px;
+    width:350px;
+    border-radius:15px;
     text-align:center;
-    font-family:Arial;
-    }
-    
-    input{
-    display:block;
-    margin:10px auto;
-    padding:10px;
-    }
+    box-shadow:0 0 25px rgba(0,0,0,0.7);
+}
+
+/* title */
+h2{
+    margin-bottom:30px;
+    letter-spacing:1px;
+}
+
+/* input fields */
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    background:#0f1430;
+    color:white;
+    font-size:14px;
+}
+
+/* input focus animation */
+input:focus{
+    outline:none;
+    border:2px solid #00ffc8;
+    box-shadow:0 0 10px #00ffc8;
+}
+
+/* login button */
+button{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    border:none;
+    border-radius:8px;
+    background:#ff3b3b;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* button hover */
+button:hover{
+    background:#ff0000;
+    transform:scale(1.05);
+    box-shadow:0 0 15px rgba(255,0,0,0.6);
+}
+
+/* glowing card animation */
+.container:hover{
+    box-shadow:0 0 40px rgba(0,255,200,0.3);
+}

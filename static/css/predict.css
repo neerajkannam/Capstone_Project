@@ -1,59 +1,116 @@
+/* Cyber animated background */
+
 body{
     margin:0;
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(120deg,#0b0f24,#1a1f4d);
+    background: linear-gradient(135deg,#0b0f24,#1c2355);
     color:white;
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
+    overflow:hidden;
 }
 
+/* moving grid animation */
+body::before{
+    content:"";
+    position:absolute;
+    width:200%;
+    height:200%;
+    background-image: linear-gradient(rgba(0,255,200,0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0,255,200,0.1) 1px, transparent 1px);
+    background-size:50px 50px;
+    animation: moveGrid 20s linear infinite;
+}
+
+/* animation movement */
+@keyframes moveGrid{
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(-50px,-50px);
+    }
+}
+
+/* floating cyber dots */
+body::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: radial-gradient(circle, rgba(0,255,200,0.3) 2px, transparent 3px);
+    background-size:120px 120px;
+    animation: cyberDots 25s linear infinite;
+}
+
+@keyframes cyberDots{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-200px);
+    }
+}
+
+/* Main card */
 .container{
+    position:relative;
+    z-index:10;
     background:#12163a;
-    padding:40px;
-    border-radius:12px;
-    width:600px;
-    box-shadow:0 0 20px rgba(0,0,0,0.6);
-}
-
-h2{
+    padding:60px;
+    border-radius:15px;
+    width:500px;
     text-align:center;
-    margin-bottom:25px;
+    box-shadow:0 0 30px rgba(0,0,0,0.7);
 }
 
-form{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:15px;
+/* Title */
+h1{
+    font-size:32px;
+    margin-bottom:20px;
+    letter-spacing:1px;
 }
 
-input{
-    padding:10px;
-    border-radius:6px;
-    border:none;
-    outline:none;
-    font-size:14px;
-}
-
-input:focus{
-    border:2px solid #4CAF50;
-}
-
-button{
-    grid-column: span 2;
-    padding:12px;
-    background:#ff3b3b;
-    border:none;
-    color:white;
+/* Description */
+p{
     font-size:16px;
-    border-radius:6px;
+    margin-bottom:30px;
+    color:#cfd3ff;
+}
+
+/* File input */
+input[type="file"]{
+    padding:10px;
+    background:#0f1430;
+    border:2px dashed #4CAF50;
+    border-radius:8px;
+    color:white;
+    width:100%;
+    cursor:pointer;
+}
+
+/* Upload button */
+button{
+    padding:12px 28px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    background:#ff3b3b;
+    color:white;
     cursor:pointer;
     transition:0.3s;
 }
 
+/* Hover effect */
 button:hover{
     background:#ff0000;
-    transform:scale(1.03);
+    transform:scale(1.05);
+}
+
+/* glowing card */
+.container:hover{
+    box-shadow:0 0 40px rgba(0,255,200,0.3);
 }

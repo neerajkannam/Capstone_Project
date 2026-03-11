@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for
 import pickle
 import pandas as pd
+import joblib
 
 app = Flask(__name__)
 
 # Load trained model
-model = pickle.load(open("model2.pkl", "rb"))
-
+model = joblib.load("best_ml_pipeline.pkl")
 # ================= HOME PAGE =================
 @app.route('/')
 def home():
@@ -40,31 +40,30 @@ def predict():
 @app.route('/result', methods=['POST'])
 def result():
 
-    data = {
-        "creation_time": request.form['creation_time'],
-        "end_time": request.form['end_time'],
-        "src_ip": request.form['src_ip'],
-        "src_ip_country_code": request.form['src_ip_country_code'],
-        "protocol": request.form['protocol'],
-        "dst_ip": request.form['dst_ip'],
-        "rule_names": request.form['rule_names'],
-        "observation_name": request.form['observation_name'],
-        "source.meta": request.form['source_meta'],
-        "source.name": request.form['source_name'],
-        "time": request.form['time'],
-        "traffic_intensity_log": float(request.form['traffic_intensity_log']),
-        "bytes_in_log": float(request.form['bytes_in_log']),
-        "src_ip_encoded": int(request.form['src_ip_encoded']),
-        "src_ip_country_code_encoded": int(request.form['src_ip_country_code_encoded'])
-    }
+    file = request.files['file']
 
-    df = pd.DataFrame([data])
+    if file:
 
-    prediction = model.predict(df)
+        data = pd.read_csv(file)
 
-    result_text = prediction[0]
+        prediction = model.predict(data)
 
-    return render_template("result.html", prediction=result_text)
+        attack_count = (prediction == 1).sum()
+        normal_count = (prediction == 0).sum()
+
+        if attack_count > 0:
+            result_text = "⚠ Cyber Attack Detected"
+        else:
+            result_text = "✅ Normal Network Traffic"
+
+        return render_template(
+            "result.html",
+            prediction=result_text,
+            attacks=attack_count,
+            normal=normal_count
+        )
+
+    return "No file uploaded"
 
 
 # ================= DASHBOARD =================

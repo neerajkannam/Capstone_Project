@@ -1,24 +1,173 @@
+/* ===== GLOBAL STYLE ===== */
+
 body{
-
-background:#0b0f24;
-color:white;
-font-family:Arial;
-text-align:center;
-
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top,#0b0f24,#02040f);
+    color:white;
 }
+
+/* ===== HEADER ===== */
+
+h1{
+    text-align:center;
+    padding:20px;
+    font-size:32px;
+    letter-spacing:2px;
+    color:#00ffc8;
+    text-shadow:0 0 10px #00ffc8;
+}
+
+/* ===== HOME LINK ===== */
+
+a{
+    display:block;
+    width:120px;
+    margin:0 auto 30px auto;
+    text-align:center;
+    padding:10px;
+    background:#12163a;
+    border-radius:6px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+a:hover{
+    background:#00ffc8;
+    color:black;
+    box-shadow:0 0 10px #00ffc8;
+}
+
+/* ===== SECTION TITLES ===== */
+
+h2{
+    margin-left:30px;
+    margin-top:40px;
+    font-size:22px;
+    color:#4ef3ff;
+}
+
+/* ===== ALERT BOX ===== */
 
 #alerts{
+    background:#12163a;
+    margin:20px 30px;
+    padding:20px;
+    border-radius:10px;
+    min-height:120px;
+    max-height:200px;
+    overflow-y:auto;
+    box-shadow:0 0 15px rgba(0,0,0,0.7);
+}
 
-background:black;
-padding:20px;
-height:200px;
-overflow:auto;
-border:2px solid red;
+/* alert animation */
+
+#alerts p{
+    margin:8px 0;
+    padding:8px;
+    border-left:4px solid red;
+    background:#1a1f4f;
+    animation:fadeIn 0.5s ease;
+}
+
+/* ===== CHART CONTAINERS ===== */
+
+canvas{
+    background:#12163a;
+    margin:20px 30px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+
+/* ===== WORLD MAP ===== */
+
+#attackMap{
+    margin:20px 30px;
+    border-radius:12px;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+/* ===== SCROLLBAR ===== */
+
+#alerts::-webkit-scrollbar{
+    width:6px;
+}
+
+#alerts::-webkit-scrollbar-thumb{
+    background:#00ffc8;
+}
+
+/* ===== FADE ANIMATION ===== */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(-10px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
 
 }
 
-canvas{
+/* ===== CYBER GRID BACKGROUND ===== */
 
-background:white;
-margin:20px;
+body::before{
+
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background-image:
+linear-gradient(rgba(0,255,200,0.07) 1px, transparent 1px),
+linear-gradient(90deg, rgba(0,255,200,0.07) 1px, transparent 1px);
+
+background-size:60px 60px;
+
+animation:gridMove 25s linear infinite;
+
+z-index:-1;
+
+}
+
+@keyframes gridMove{
+
+from{
+transform:translate(0,0);
+}
+
+to{
+transform:translate(-60px,-60px);
+}
+
+}
+#attackMap{
+height:500px;
+width:90%;
+margin:20px auto;
+border-radius:12px;
+}
+/* Chart container size */
+
+/* Medium size charts */
+
+#trafficChart,
+#predictionChart{
+    width:600px !important;
+    height:300px !important;
+    display:block;
+    margin:30px auto;
+    background:#12163a;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,0.6);
 }

@@ -3,49 +3,28 @@
 
 <head>
 <title>Cyber Attack Detection</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css') }}">
 </head>
 
 <body>
 
-<h2>Enter Network Traffic Details</h2>
+<div class="container">
 
-<form action="/result" method="POST">
+<h1>AI Cyber Attack Detection System</h1>
 
-<input type="text" name="creation_time" placeholder="Creation Time (2024-04-25 23:00:00)" required>
+<p>Upload Network Traffic CSV File (34 Features)</p>
 
-<input type="text" name="end_time" placeholder="End Time (2024-04-25 23:10:00)" required>
+<form action="/result" method="POST" enctype="multipart/form-data">
 
-<input type="text" name="src_ip" placeholder="Source IP (147.161.161.82)" required>
-
-<input type="text" name="src_ip_country_code" placeholder="Country Code (AE, US)" required>
-
-<input type="text" name="protocol" placeholder="Protocol (HTTPS, TCP, UDP)" required>
-
-<input type="text" name="dst_ip" placeholder="Destination IP (10.138.69.97)" required>
-
-<input type="text" name="rule_names" placeholder="Rule Name" required>
-
-<input type="text" name="observation_name" placeholder="Observation Name" required>
-
-<input type="text" name="source_meta" placeholder="Source Meta (AWS_VPC_Flow)" required>
-
-<input type="text" name="source_name" placeholder="Source Name (prod_webserver)" required>
-
-<input type="text" name="time" placeholder="Time (2024-04-25 23:00:00)" required>
-
-<input type="number" step="any" name="traffic_intensity_log" placeholder="Traffic Intensity Log" required>
-
-<input type="number" step="any" name="bytes_in_log" placeholder="Bytes In Log" required>
-
-<input type="number" name="src_ip_encoded" placeholder="Encoded Source IP" required>
-
-<input type="number" name="src_ip_country_code_encoded" placeholder="Encoded Country Code" required>
+<input type="file" name="file" accept=".csv" required>
 
 <br><br>
 
-<button type="submit">Detect Cyber Threat</button>
+<button type="submit">Upload & Detect Threat</button>
 
 </form>
+
+</div>
 
 </body>
 </html>

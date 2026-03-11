@@ -7,7 +7,12 @@
 
 <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
 
+<!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Leaflet Map -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 </head>
 
@@ -17,24 +22,26 @@
 
 <a href="/">Home</a>
 
-<h2>🚨 Live Attack Alerts</h2>
 
+<h2>🚨 Live Attack Alerts</h2>
 <div id="alerts"></div>
 
 
 <h2>📊 Network Traffic Visualization</h2>
-
-<canvas id="trafficChart" width="400" height="200"></canvas>
+<canvas id="trafficChart"></canvas>
 
 
 <h2>🧠 AI Prediction Visualization</h2>
+<canvas id="predictionChart"></canvas>
 
-<canvas id="predictionChart" width="400" height="200"></canvas>
+
+<h2>🌍 Live Cyber Attack Map</h2>
+<div id="attackMap"></div>
 
 
+<!-- JS FILES -->
 <script src="{{ url_for('static', filename='js/alerts.js') }}"></script>
 <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
 
 </body>
-
 </html>
