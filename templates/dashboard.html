@@ -20,7 +20,19 @@
 
 <h1>Cyber Security Dashboard</h1>
 
-<a href="/">Home</a>
+<div class="top-buttons">
+
+    <a href="{{ url_for('home') }}" class="nav-btn">🏠 Home</a>
+
+    <a href="{{ url_for('view_logs') }}" class="nav-btn log-btn">
+        🔐 View Logs
+    </a>
+
+    <a href="{{ url_for('logout') }}" class="nav-btn logout-btn">
+        🚪 Logout
+    </a>
+
+</div>
 
 
 <h2>🚨 Live Attack Alerts</h2>

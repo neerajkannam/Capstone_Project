@@ -171,3 +171,53 @@ border-radius:12px;
     border-radius:12px;
     box-shadow:0 0 15px rgba(0,0,0,0.6);
 }
+/* ===== TOP BUTTONS ===== */
+
+.top-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+/* Common button style */
+
+.nav-btn{
+    padding:10px 20px;
+    text-decoration:none;
+    background:#12163a;
+    color:white;
+    border-radius:6px;
+    transition:0.3s;
+    box-shadow:0 0 10px rgba(0,0,0,0.6);
+}
+
+/* Hover effect */
+
+.nav-btn:hover{
+    background:#00ffc8;
+    color:black;
+    box-shadow:0 0 15px #00ffc8;
+}
+
+/* Logs button (red) */
+
+.log-btn{
+    background:#ff3b3b;
+}
+
+.log-btn:hover{
+    background:#00ffc8;
+    color:black;
+}
+
+/* Logout button */
+
+.logout-btn{
+    background:#444;
+}
+
+.logout-btn:hover{
+    background:#ff3b3b;
+    color:white;
+}

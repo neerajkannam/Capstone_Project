@@ -1,0 +1,159 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 169-838-568
+INFO:werkzeug: * Detected change in 'C:\\Users\\lchan\\OneDrive\\Desktop\\Sudheer\\Capstone_Project\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 169-838-568
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 169-838-568
+INFO:werkzeug: * Detected change in 'C:\\Users\\lchan\\OneDrive\\Desktop\\Sudheer\\Capstone_Project\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\lchan\\OneDrive\\Desktop\\Sudheer\\Capstone_Project\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:49:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:49:51] "GET /static/css/home.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:49:51] "GET /static/images/cyber_img.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:49:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:49:57] "GET /signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:49:57] "GET /static/css/signup.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:50:11] "[32mPOST /signup HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:50:11] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:50:11] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:root:Login success: admin
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:50:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:50:23] "GET /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:50:23] "[36mGET /static/css/predict.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:53:12] "POST /result HTTP/1.1" 200 -
+INFO:root:Prediction done by admin
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:54:20] "POST /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:54:20] "[36mGET /static/css/result.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:54:20] "[36mGET /static/js/result.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:54:24] "GET /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:54:24] "[36mGET /static/css/predict.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:54:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:54:40] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:54:48] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:54:48] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:54:48] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:54:48] "[36mGET /static/js/alerts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:55:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:55:00] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 21:55:00] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:26:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:26:12] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:26:12] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:26:14] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:26:14] "GET /static/css/dashboard.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:26:14] "[36mGET /static/js/alerts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:26:14] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:26:17] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:26:17] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:26:17] "[36mGET /static/js/alerts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:26:17] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+2026-03-26 22:26:36,869 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-26 22:26:36,869 - INFO - [33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:28:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:28:16] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:28:16] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:28:18] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:28:18] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:28:18] "[36mGET /static/js/alerts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:28:18] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:28:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:28:20] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:28:22] "GET /signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:28:22] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+2026-03-26 22:29:52,446 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-03-26 22:29:52,446 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 22:29:52,448 - INFO -  * Restarting with stat
+2026-03-26 22:29:55,518 - WARNING -  * Debugger is active!
+2026-03-26 22:29:55,520 - INFO -  * Debugger PIN: 169-838-568
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:30:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:30:56] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:30:56] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:30:59] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:30:59] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:30:59] "[36mGET /static/js/alerts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:30:59] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:31:58] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:31:59] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:31:59] "[36mGET /static/js/alerts.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:31:59] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+2026-03-26 22:41:08,358 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2026-03-26 22:41:08,359 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 22:41:08,360 - INFO -  * Restarting with stat
+2026-03-26 22:41:11,352 - WARNING -  * Debugger is active!
+2026-03-26 22:41:11,358 - INFO -  * Debugger PIN: 169-838-568
+2026-03-26 22:41:45,462 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2026-03-26 22:41:45,462 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 22:41:45,464 - INFO -  * Restarting with stat
+2026-03-26 22:41:48,408 - WARNING -  * Debugger is active!
+2026-03-26 22:41:48,412 - INFO -  * Debugger PIN: 169-838-568
+2026-03-26 22:42:10,594 - INFO -  * Detected change in 'C:\\Users\\lchan\\OneDrive\\Desktop\\Sudheer\\Capstone_Project\\app.py', reloading
+2026-03-26 22:42:10,987 - INFO -  * Restarting with stat
+2026-03-26 22:42:14,793 - WARNING -  * Debugger is active!
+2026-03-26 22:42:14,798 - INFO -  * Debugger PIN: 169-838-568
+2026-03-26 22:42:23,220 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2026-03-26 22:42:23,220 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-26 22:42:23,223 - INFO -  * Restarting with stat
+2026-03-26 22:42:26,030 - WARNING -  * Debugger is active!
+2026-03-26 22:42:26,033 - INFO -  * Debugger PIN: 169-838-568
+2026-03-26 22:42:57,201 - INFO - 192.168.1.9 - - [26/Mar/2026 22:42:57] "GET / HTTP/1.1" 200 -
+2026-03-26 22:42:57,374 - INFO - 192.168.1.9 - - [26/Mar/2026 22:42:57] "GET /static/css/home.css HTTP/1.1" 200 -
+2026-03-26 22:42:57,385 - INFO - 192.168.1.9 - - [26/Mar/2026 22:42:57] "GET /static/images/cyber_img.jpeg HTTP/1.1" 200 -
+2026-03-26 22:42:57,408 - INFO - 192.168.1.9 - - [26/Mar/2026 22:42:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-26 22:42:59,797 - INFO - 192.168.1.9 - - [26/Mar/2026 22:42:59] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2026-03-26 22:42:59,818 - INFO - 192.168.1.9 - - [26/Mar/2026 22:42:59] "GET /login HTTP/1.1" 200 -
+2026-03-26 22:42:59,853 - INFO - 192.168.1.9 - - [26/Mar/2026 22:42:59] "GET /static/css/login.css HTTP/1.1" 200 -
+2026-03-26 22:43:21,567 - INFO - Login success: admin from 192.168.1.9
+2026-03-26 22:43:21,570 - INFO - 192.168.1.9 - - [26/Mar/2026 22:43:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-03-26 22:43:21,589 - INFO - 192.168.1.9 - - [26/Mar/2026 22:43:21] "GET /predict HTTP/1.1" 200 -
+2026-03-26 22:43:21,639 - INFO - 192.168.1.9 - - [26/Mar/2026 22:43:21] "GET /static/css/predict.css HTTP/1.1" 200 -
+2026-03-26 22:43:36,446 - INFO - 192.168.1.9 - - [26/Mar/2026 22:43:36] "GET /dashboard HTTP/1.1" 200 -
+2026-03-26 22:43:36,476 - INFO - 192.168.1.9 - - [26/Mar/2026 22:43:36] "GET /static/css/dashboard.css HTTP/1.1" 200 -
+2026-03-26 22:43:36,481 - INFO - 192.168.1.9 - - [26/Mar/2026 22:43:36] "GET /static/js/alerts.js HTTP/1.1" 200 -
+2026-03-26 22:43:36,491 - INFO - 192.168.1.9 - - [26/Mar/2026 22:43:36] "GET /static/js/charts.js HTTP/1.1" 200 -
+2026-03-26 22:43:44,311 - INFO - 192.168.1.9 - - [26/Mar/2026 22:43:44] "GET /logs HTTP/1.1" 200 -
+2026-03-26 22:43:44,356 - INFO - 192.168.1.9 - - [26/Mar/2026 22:43:44] "GET /static/css/logs.css HTTP/1.1" 200 -
+2026-03-26 22:44:03,859 - INFO - User logged out: admin
+2026-03-26 22:44:03,861 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:03] "[32mGET /logout HTTP/1.1[0m" 302 -
+2026-03-26 22:44:03,873 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:03] "GET /login HTTP/1.1" 200 -
+2026-03-26 22:44:03,909 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:03] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2026-03-26 22:44:08,932 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:08] "GET / HTTP/1.1" 200 -
+2026-03-26 22:44:08,975 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:08] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2026-03-26 22:44:08,986 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:08] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+2026-03-26 22:44:10,650 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:10] "GET /login HTTP/1.1" 200 -
+2026-03-26 22:44:10,701 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:10] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2026-03-26 22:44:14,625 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:14] "GET /signup HTTP/1.1" 200 -
+2026-03-26 22:44:14,666 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:14] "GET /static/css/signup.css HTTP/1.1" 200 -
+2026-03-26 22:44:55,801 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:55] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2026-03-26 22:44:55,813 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:55] "GET /login HTTP/1.1" 200 -
+2026-03-26 22:44:55,850 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:55] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -

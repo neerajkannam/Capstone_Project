@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Logs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/logs.css') }}">
+</head>
+
+<body>
+
+<h1>🔐 Security Logs</h1>
+
+<a href="{{ url_for('dashboard') }}" class="back-btn">
+    ⬅ Back to Dashboard
+</a>
+
+<div class="log-container">
+
+{% for log in logs %}
+    {% if "INFO" in log %}
+        <p class="info">{{ log }}</p>
+    {% elif "WARNING" in log %}
+        <p class="warning">{{ log }}</p>
+    {% elif "ERROR" in log %}
+        <p class="error">{{ log }}</p>
+    {% else %}
+        <p>{{ log }}</p>
+    {% endif %}
+{% endfor %}
+
+</div>
+
+</body>
+</html>
