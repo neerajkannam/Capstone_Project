@@ -157,3 +157,23 @@ INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:31:59] "[36mGET /static/js/charts.j
 2026-03-26 22:44:55,801 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:55] "[32mGET /dashboard HTTP/1.1[0m" 302 -
 2026-03-26 22:44:55,813 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:55] "GET /login HTTP/1.1" 200 -
 2026-03-26 22:44:55,850 - INFO - 192.168.1.9 - - [26/Mar/2026 22:44:55] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2026-03-27 08:39:06,880 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2026-03-27 08:39:06,881 - INFO - [33mPress CTRL+C to quit[0m
+2026-03-27 08:39:06,883 - INFO -  * Restarting with stat
+2026-03-27 08:39:10,004 - WARNING -  * Debugger is active!
+2026-03-27 08:39:10,008 - INFO -  * Debugger PIN: 169-838-568
+2026-03-27 08:39:43,348 - INFO - 192.168.1.9 - - [27/Mar/2026 08:39:43] "GET / HTTP/1.1" 200 -
+2026-03-27 08:39:43,521 - INFO - 192.168.1.9 - - [27/Mar/2026 08:39:43] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2026-03-27 08:39:43,538 - INFO - 192.168.1.9 - - [27/Mar/2026 08:39:43] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+2026-03-27 08:39:43,554 - INFO - 192.168.1.9 - - [27/Mar/2026 08:39:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-27 08:41:26,882 - INFO - 192.168.1.9 - - [27/Mar/2026 08:41:26] "GET /login HTTP/1.1" 200 -
+2026-03-27 08:41:26,929 - INFO - 192.168.1.9 - - [27/Mar/2026 08:41:26] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2026-03-27 08:42:15,817 - WARNING - SQL Injection attempt from 192.168.1.9: ' OR 1=1 --
+2026-03-27 08:42:15,819 - INFO - 192.168.1.9 - - [27/Mar/2026 08:42:15] "POST /login HTTP/1.1" 200 -
+2026-03-27 08:47:37,866 - INFO - 192.168.1.9 - - [27/Mar/2026 08:47:37] "GET /login HTTP/1.1" 200 -
+2026-03-27 08:47:46,496 - WARNING - SQL Injection attempt from 192.168.1.9: ' OR 1=1 --
+2026-03-27 08:47:46,498 - INFO - 192.168.1.9 - - [27/Mar/2026 08:47:46] "POST /login HTTP/1.1" 200 -
+2026-03-27 08:48:08,667 - INFO - 192.168.1.9 - - [27/Mar/2026 08:48:08] "GET /login HTTP/1.1" 200 -
