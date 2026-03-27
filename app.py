@@ -101,7 +101,23 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-        if username == "admin" and password == "admin":
+        # 💉 SQL Injection detection
+        if is_suspicious_input(username) or is_suspicious_input(password):
+            logging.warning(f"SQL Injection attempt from {ip}: {username}")
+            return "Suspicious input detected"
+
+        conn = get_db()
+        cursor = conn.cursor()
+
+        # ✅ Safe query
+        cursor.execute("SELECT password FROM users WHERE username = ?", (username,))
+        user = cursor.fetchone()
+        conn.close()
+
+        if user and check_password_hash(user[0], password):
+            session['user'] = username
+            login_attempts[ip] = 0
+            logging.info(f"Login success: {username} from {ip}")
             return redirect(url_for('predict'))
         else:
             login_attempts[ip] = login_attempts.get(ip, 0) + 1
@@ -204,4 +220,7 @@ def view_logs():
 
 # ================= RUN =================
 if __name__ == "__main__":
-    app.run(debug=True)
+  #  print("\n🚀 Application is running at:")
+    #print("👉 http://127.0.0.1:5000\n")
+    
+    app.run(host="0.0.0.0", port=5000, debug=True)
