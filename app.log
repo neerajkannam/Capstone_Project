@@ -177,3 +177,102 @@ INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:31:59] "[36mGET /static/js/charts.j
 2026-03-27 08:47:46,496 - WARNING - SQL Injection attempt from 192.168.1.9: ' OR 1=1 --
 2026-03-27 08:47:46,498 - INFO - 192.168.1.9 - - [27/Mar/2026 08:47:46] "POST /login HTTP/1.1" 200 -
 2026-03-27 08:48:08,667 - INFO - 192.168.1.9 - - [27/Mar/2026 08:48:08] "GET /login HTTP/1.1" 200 -
+2026-04-01 09:53:25,000 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2026-04-01 09:53:25,002 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-01 09:53:25,004 - INFO -  * Restarting with stat
+2026-04-01 09:53:26,994 - WARNING -  * Debugger is active!
+2026-04-01 09:53:27,004 - INFO -  * Debugger PIN: 494-359-185
+2026-04-01 09:53:56,471 - INFO - 127.0.0.1 - - [01/Apr/2026 09:53:56] "GET / HTTP/1.1" 200 -
+2026-04-01 09:53:56,622 - INFO - 127.0.0.1 - - [01/Apr/2026 09:53:56] "GET /static/css/home.css HTTP/1.1" 200 -
+2026-04-01 09:53:56,646 - INFO - 127.0.0.1 - - [01/Apr/2026 09:53:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-01 09:53:56,647 - INFO - 127.0.0.1 - - [01/Apr/2026 09:53:56] "GET /static/images/cyber_img.jpeg HTTP/1.1" 200 -
+2026-04-01 09:54:01,787 - INFO - 127.0.0.1 - - [01/Apr/2026 09:54:01] "GET /signup HTTP/1.1" 200 -
+2026-04-01 09:54:01,829 - INFO - 127.0.0.1 - - [01/Apr/2026 09:54:01] "GET /static/css/signup.css HTTP/1.1" 200 -
+2026-04-01 09:54:08,510 - INFO - 127.0.0.1 - - [01/Apr/2026 09:54:08] "GET /login HTTP/1.1" 200 -
+2026-04-01 09:54:08,536 - INFO - 127.0.0.1 - - [01/Apr/2026 09:54:08] "GET /static/css/login.css HTTP/1.1" 200 -
+2026-04-01 09:54:13,392 - WARNING - Failed login: admin from 127.0.0.1
+2026-04-01 09:54:13,394 - INFO - 127.0.0.1 - - [01/Apr/2026 09:54:13] "POST /login HTTP/1.1" 200 -
+2026-04-01 09:54:17,273 - INFO - 127.0.0.1 - - [01/Apr/2026 09:54:17] "GET /login HTTP/1.1" 200 -
+2026-04-01 09:54:27,798 - INFO - Login success: admin from 127.0.0.1
+2026-04-01 09:54:27,800 - INFO - 127.0.0.1 - - [01/Apr/2026 09:54:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-04-01 09:54:27,833 - INFO - 127.0.0.1 - - [01/Apr/2026 09:54:27] "GET /predict HTTP/1.1" 200 -
+2026-04-01 09:54:27,884 - INFO - 127.0.0.1 - - [01/Apr/2026 09:54:27] "GET /static/css/predict.css HTTP/1.1" 200 -
+2026-04-01 09:55:08,636 - ERROR - CSV processing error: 'DataFrame' object has no attribute 'applymap'
+2026-04-01 09:55:08,639 - INFO - 127.0.0.1 - - [01/Apr/2026 09:55:08] "POST /result HTTP/1.1" 200 -
+2026-04-01 09:55:26,229 - ERROR - CSV processing error: 'DataFrame' object has no attribute 'applymap'
+2026-04-01 09:55:26,231 - INFO - 127.0.0.1 - - [01/Apr/2026 09:55:26] "POST /result HTTP/1.1" 200 -
+2026-04-01 09:55:40,994 - ERROR - CSV processing error: 'DataFrame' object has no attribute 'applymap'
+2026-04-01 09:55:40,996 - INFO - 127.0.0.1 - - [01/Apr/2026 09:55:40] "POST /result HTTP/1.1" 200 -
+2026-04-01 09:59:45,498 - INFO -  * Detected change in 'C:\\Users\\lchan\\OneDrive\\Desktop\\Sudheer\\Capstone_Project\\app.py', reloading
+2026-04-01 09:59:45,862 - INFO -  * Restarting with stat
+2026-04-01 09:59:48,351 - WARNING -  * Debugger is active!
+2026-04-01 09:59:48,353 - INFO -  * Debugger PIN: 494-359-185
+2026-04-01 09:59:54,932 - ERROR - CSV processing error: 'DataFrame' object has no attribute 'applymap'
+2026-04-01 09:59:54,935 - INFO - 127.0.0.1 - - [01/Apr/2026 09:59:54] "POST /result HTTP/1.1" 200 -
+2026-04-01 10:00:05,817 - ERROR - CSV processing error: 'DataFrame' object has no attribute 'applymap'
+2026-04-01 10:00:05,821 - INFO - 127.0.0.1 - - [01/Apr/2026 10:00:05] "POST /result HTTP/1.1" 200 -
+2026-04-01 10:05:16,102 - INFO -  * Detected change in 'C:\\Users\\lchan\\OneDrive\\Desktop\\Sudheer\\Capstone_Project\\app.py', reloading
+2026-04-01 10:05:16,406 - INFO -  * Restarting with stat
+2026-04-01 10:05:18,872 - WARNING -  * Debugger is active!
+2026-04-01 10:05:18,874 - INFO -  * Debugger PIN: 494-359-185
+2026-04-01 10:05:22,724 - ERROR - CSV processing error: 'DataFrame' object has no attribute 'applymap'
+2026-04-01 10:05:22,726 - INFO - 127.0.0.1 - - [01/Apr/2026 10:05:22] "POST /result HTTP/1.1" 200 -
+2026-04-01 10:24:29,479 - INFO -  * Detected change in 'C:\\Users\\lchan\\OneDrive\\Desktop\\Sudheer\\Capstone_Project\\app.py', reloading
+2026-04-01 10:24:29,777 - INFO -  * Restarting with stat
+2026-04-01 10:28:13,531 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2026-04-01 10:28:13,532 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-01 10:28:13,533 - INFO -  * Restarting with stat
+2026-04-01 10:28:15,671 - WARNING -  * Debugger is active!
+2026-04-01 10:28:15,674 - INFO -  * Debugger PIN: 494-359-185
+2026-04-01 10:28:29,934 - INFO - 127.0.0.1 - - [01/Apr/2026 10:28:29] "GET / HTTP/1.1" 200 -
+2026-04-01 10:28:30,056 - INFO - 127.0.0.1 - - [01/Apr/2026 10:28:30] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2026-04-01 10:28:30,065 - INFO - 127.0.0.1 - - [01/Apr/2026 10:28:30] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+2026-04-01 10:28:32,541 - INFO - 127.0.0.1 - - [01/Apr/2026 10:28:32] "GET /login HTTP/1.1" 200 -
+2026-04-01 10:28:32,563 - INFO - 127.0.0.1 - - [01/Apr/2026 10:28:32] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2026-04-01 10:28:36,564 - WARNING - Failed login: admin from 127.0.0.1
+2026-04-01 10:28:36,565 - INFO - 127.0.0.1 - - [01/Apr/2026 10:28:36] "POST /login HTTP/1.1" 200 -
+2026-04-01 10:28:38,904 - INFO - 127.0.0.1 - - [01/Apr/2026 10:28:38] "GET /login HTTP/1.1" 200 -
+2026-04-01 10:28:48,780 - INFO - Login success: admin from 127.0.0.1
+2026-04-01 10:28:48,781 - INFO - 127.0.0.1 - - [01/Apr/2026 10:28:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-04-01 10:28:48,792 - INFO - 127.0.0.1 - - [01/Apr/2026 10:28:48] "GET /predict HTTP/1.1" 200 -
+2026-04-01 10:28:48,812 - INFO - 127.0.0.1 - - [01/Apr/2026 10:28:48] "[36mGET /static/css/predict.css HTTP/1.1[0m" 304 -
+2026-04-01 10:29:00,349 - INFO - admin uploaded file first_row_X_ml.csv
+2026-04-01 10:29:00,436 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:00] "POST /result HTTP/1.1" 200 -
+2026-04-01 10:29:00,493 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:00] "GET /static/css/result.css HTTP/1.1" 200 -
+2026-04-01 10:29:00,540 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:00] "GET /static/js/result.js HTTP/1.1" 200 -
+2026-04-01 10:29:06,996 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:06] "GET /predict HTTP/1.1" 200 -
+2026-04-01 10:29:07,017 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:07] "[36mGET /static/css/predict.css HTTP/1.1[0m" 304 -
+2026-04-01 10:29:16,212 - INFO - admin uploaded file fourth_row_X_ml.csv
+2026-04-01 10:29:16,216 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:16] "POST /result HTTP/1.1" 200 -
+2026-04-01 10:29:16,262 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:16] "[36mGET /static/css/result.css HTTP/1.1[0m" 304 -
+2026-04-01 10:29:16,278 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:16] "[36mGET /static/js/result.js HTTP/1.1[0m" 304 -
+2026-04-01 10:29:20,712 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:20] "GET / HTTP/1.1" 200 -
+2026-04-01 10:29:20,736 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:20] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2026-04-01 10:29:20,748 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:20] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+2026-04-01 10:29:22,245 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:22] "GET /dashboard HTTP/1.1" 200 -
+2026-04-01 10:29:22,286 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:22] "GET /static/css/dashboard.css HTTP/1.1" 200 -
+2026-04-01 10:29:22,340 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:22] "GET /static/js/alerts.js HTTP/1.1" 200 -
+2026-04-01 10:29:22,351 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:22] "GET /static/js/charts.js HTTP/1.1" 200 -
+2026-04-01 10:29:24,629 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:24] "GET /logs HTTP/1.1" 200 -
+2026-04-01 10:29:24,667 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:24] "GET /static/css/logs.css HTTP/1.1" 200 -
+2026-04-01 10:29:54,252 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:54] "GET /dashboard HTTP/1.1" 200 -
+2026-04-01 10:29:54,278 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:54] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+2026-04-01 10:29:54,281 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:54] "[36mGET /static/js/alerts.js HTTP/1.1[0m" 304 -
+2026-04-01 10:29:54,283 - INFO - 127.0.0.1 - - [01/Apr/2026 10:29:54] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+2026-04-01 10:30:00,993 - INFO - 127.0.0.1 - - [01/Apr/2026 10:30:00] "GET / HTTP/1.1" 200 -
+2026-04-01 10:30:01,027 - INFO - 127.0.0.1 - - [01/Apr/2026 10:30:01] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2026-04-01 10:30:01,038 - INFO - 127.0.0.1 - - [01/Apr/2026 10:30:01] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+2026-04-01 10:30:16,635 - INFO - 127.0.0.1 - - [01/Apr/2026 10:30:16] "GET /login HTTP/1.1" 200 -
+2026-04-01 10:30:16,663 - INFO - 127.0.0.1 - - [01/Apr/2026 10:30:16] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2026-04-01 10:30:29,727 - INFO - Login success: admin from 127.0.0.1
+2026-04-01 10:30:29,729 - INFO - 127.0.0.1 - - [01/Apr/2026 10:30:29] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-04-01 10:30:29,735 - INFO - 127.0.0.1 - - [01/Apr/2026 10:30:29] "GET /predict HTTP/1.1" 200 -
+2026-04-01 10:30:29,764 - INFO - 127.0.0.1 - - [01/Apr/2026 10:30:29] "[36mGET /static/css/predict.css HTTP/1.1[0m" 304 -
+2026-04-01 10:31:43,494 - WARNING - Injection attempt from 127.0.0.1: ' OR 1=1 --
+2026-04-01 10:31:43,495 - INFO - 127.0.0.1 - - [01/Apr/2026 10:31:43] "POST /login HTTP/1.1" 200 -

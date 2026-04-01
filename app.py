@@ -47,10 +47,24 @@ def get_db():
                   password TEXT)''')
     return conn
 
-# ================= SQL INJECTION DETECTION =================
+# ================= 🔐 RULE-BASED SECURITY =================
 def is_suspicious_input(text):
-    pattern = r"(--|;|'|OR|AND|=)"
-    return re.search(pattern, text, re.IGNORECASE)
+    if not isinstance(text, str):
+        return False
+
+    patterns = [
+        r"(--|\#)",                     # SQL comments
+        r"(\bOR\b|\bAND\b)\s+\d+=\d+",  # SQL injection like OR 1=1
+        r"\bUNION\b.*\bSELECT\b",       # UNION SELECT attack
+        r"<\s*script",                 # XSS
+        r"javascript:",                # JS injection
+        r"onerror\s*=",                # XSS event
+    ]
+
+    for pattern in patterns:
+        if re.search(pattern, text, re.IGNORECASE):
+            return True
+    return False
 
 # ================= HOME =================
 @app.route('/')
@@ -67,6 +81,10 @@ def signup():
         # Input validation
         if not username.isalnum() or len(password) < 6:
             return "Invalid input (username must be alphanumeric & password >= 6 chars)"
+
+        # 🔐 Rule-based check
+        if is_suspicious_input(username) or is_suspicious_input(password):
+            return "Suspicious input detected"
 
         hashed_pw = generate_password_hash(password)
 
@@ -88,11 +106,11 @@ def signup():
 def login():
     ip = request.remote_addr
 
-    # ⏳ Check lock time (1 minute block)
+    # ⏳ Lock check
     if ip in lock_time and time.time() - lock_time[ip] < 60:
         return "Too many attempts. Try after 1 minute."
 
-    # 🚫 Brute force limit
+    # 🚫 Attempt limit
     if ip in login_attempts and login_attempts[ip] >= 5:
         lock_time[ip] = time.time()
         return "Too many attempts. Try later."
@@ -101,15 +119,15 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-        # 💉 SQL Injection detection
+        # 🔐 Rule-based detection
         if is_suspicious_input(username) or is_suspicious_input(password):
-            logging.warning(f"SQL Injection attempt from {ip}: {username}")
+            logging.warning(f"Injection attempt from {ip}: {username}")
             return "Suspicious input detected"
 
         conn = get_db()
         cursor = conn.cursor()
 
-        # ✅ Safe query
+        # ✅ Parameterized query (safe)
         cursor.execute("SELECT password FROM users WHERE username = ?", (username,))
         user = cursor.fetchone()
         conn.close()
@@ -135,7 +153,7 @@ def logout():
     logging.info(f"User logged out: {user}")
     return redirect(url_for('login'))
 
-# ================= PREDICT PAGE =================
+# ================= PREDICT =================
 @app.route('/predict')
 def predict():
     if 'user' not in session:
@@ -150,31 +168,37 @@ def result():
 
     file = request.files['file']
 
-    # 📂 File validation
     if not file:
         return "No file uploaded"
 
+    # 🔐 File type check
     if not file.filename.lower().endswith('.csv'):
-        logging.warning(f"Invalid file type: {file.filename}")
         return "Only CSV files allowed"
 
+    if file.content_type != 'text/csv':
+        return "Invalid file type"
+
     filename = secure_filename(file.filename)
+
+    # 🔐 Filename attack prevention
+    if ".." in filename or filename.startswith("/"):
+        return "Invalid file name"
+
     filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     file.save(filepath)
 
     try:
         data = pd.read_csv(filepath)
 
-        # 🚫 Empty file check
         if data.empty:
             return "Empty CSV file"
 
-        # ⚠️ Column validation (update with your dataset columns)
-        # expected_columns = ['feature1', 'feature2', 'feature3']
-        # if list(data.columns) != expected_columns:
-        #     logging.warning("Invalid CSV structure")
-        #     return "Invalid CSV format"
-
+        # 🔐 Smart CSV scan
+        for col in data.select_dtypes(include=['object']).columns:
+           if data[col].apply(is_suspicious_input).any():
+              logging.warning(f"Malicious CSV uploaded in column: {col}")
+              return "🚫 Malicious content detected in file"
+        # 🤖 ML Prediction
         prediction = model.predict(data)
 
         attack_count = (prediction == 1).sum()
@@ -204,7 +228,7 @@ def dashboard():
         return redirect(url_for('login'))
     return render_template("dashboard.html")
 
-# ================= VIEW LOGS =================
+# ================= LOGS =================
 @app.route('/logs')
 def view_logs():
     if 'user' not in session:
@@ -220,7 +244,6 @@ def view_logs():
 
 # ================= RUN =================
 if __name__ == "__main__":
-  #  print("\n🚀 Application is running at:")
-    #print("👉 http://127.0.0.1:5000\n")
-    
+    print("\n🚀 Application is running at:")
+    print("👉 http://127.0.0.1:5000\n")
     app.run(host="0.0.0.0", port=5000, debug=True)
