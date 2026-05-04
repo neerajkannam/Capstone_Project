@@ -231,6 +231,33 @@ def result():
 def logout():
     session.pop('user', None)
     return redirect(url_for('login'))
+# ================= DASHBOARD =================
+@app.route('/dashboard')
+def dashboard():
+    if 'user' not in session:
+        return redirect(url_for('login'))
+
+    return render_template("dashboard.html")
+
+
+# ================= LOGS =================
+@app.route('/logs')
+def view_logs():
+    if 'user' not in session:
+        return redirect(url_for('login'))
+
+    try:
+        with open('app.log', 'r') as f:
+            logs = f.readlines()
+
+        # Optional: show only last 100 logs (better performance)
+        logs = logs[-100:]
+
+    except Exception as e:
+        logs = [f"No logs found or error: {str(e)}"]
+
+    return render_template("logs.html", logs=logs)
+
 
 # ================= RUN =================
 if __name__ == "__main__":
