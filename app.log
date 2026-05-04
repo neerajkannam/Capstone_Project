@@ -276,3 +276,70 @@ INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:31:59] "[36mGET /static/js/charts.j
 2026-04-01 10:30:29,764 - INFO - 127.0.0.1 - - [01/Apr/2026 10:30:29] "[36mGET /static/css/predict.css HTTP/1.1[0m" 304 -
 2026-04-01 10:31:43,494 - WARNING - Injection attempt from 127.0.0.1: ' OR 1=1 --
 2026-04-01 10:31:43,495 - INFO - 127.0.0.1 - - [01/Apr/2026 10:31:43] "POST /login HTTP/1.1" 200 -
+2026-05-03 18:29:42,122 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2026-05-03 18:29:42,124 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-03 18:30:30,120 - INFO - 192.168.1.6 - - [03/May/2026 18:30:30] "GET / HTTP/1.1" 200 -
+2026-05-03 18:30:30,324 - INFO - 192.168.1.6 - - [03/May/2026 18:30:30] "GET /static/css/home.css HTTP/1.1" 200 -
+2026-05-03 18:30:30,356 - INFO - 192.168.1.6 - - [03/May/2026 18:30:30] "GET /static/images/cyber_img.jpeg HTTP/1.1" 200 -
+2026-05-03 18:30:30,360 - INFO - 192.168.1.6 - - [03/May/2026 18:30:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-03 18:30:43,090 - INFO - 192.168.1.6 - - [03/May/2026 18:30:43] "GET /login HTTP/1.1" 200 -
+2026-05-03 18:30:43,129 - INFO - 192.168.1.6 - - [03/May/2026 18:30:43] "GET /static/css/login.css HTTP/1.1" 200 -
+2026-05-03 18:30:50,712 - INFO - 192.168.1.6 - - [03/May/2026 18:30:50] "GET /signup HTTP/1.1" 200 -
+2026-05-03 18:30:50,759 - INFO - 192.168.1.6 - - [03/May/2026 18:30:50] "GET /static/css/signup.css HTTP/1.1" 200 -
+2026-05-03 18:31:01,741 - INFO - 192.168.1.6 - - [03/May/2026 18:31:01] "POST /signup HTTP/1.1" 200 -
+2026-05-03 18:31:10,565 - INFO - 192.168.1.6 - - [03/May/2026 18:31:10] "GET /signup HTTP/1.1" 200 -
+2026-05-03 18:31:25,975 - INFO - 192.168.1.6 - - [03/May/2026 18:31:25] "POST /signup HTTP/1.1" 200 -
+2026-05-03 22:28:13,772 - INFO - 192.168.1.6 - - [03/May/2026 22:28:13] "GET /signup HTTP/1.1" 200 -
+2026-05-03 22:28:27,613 - INFO - 192.168.1.6 - - [03/May/2026 22:28:27] "[32mPOST /signup HTTP/1.1[0m" 302 -
+2026-05-03 22:28:27,624 - INFO - 192.168.1.6 - - [03/May/2026 22:28:27] "GET /login HTTP/1.1" 200 -
+2026-05-03 22:28:27,671 - INFO - 192.168.1.6 - - [03/May/2026 22:28:27] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2026-05-03 22:28:39,111 - INFO - 192.168.1.6 - - [03/May/2026 22:28:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-03 22:28:39,154 - INFO - 192.168.1.6 - - [03/May/2026 22:28:39] "GET /predict HTTP/1.1" 200 -
+2026-05-03 22:28:39,230 - INFO - 192.168.1.6 - - [03/May/2026 22:28:39] "GET /static/css/predict.css HTTP/1.1" 200 -
+2026-05-03 22:28:59,796 - INFO - 192.168.1.6 - - [03/May/2026 22:28:59] "[31m[1mPOST /result HTTP/1.1[0m" 401 -
+2026-05-03 22:29:12,220 - INFO - 192.168.1.6 - - [03/May/2026 22:29:12] "[31m[1mPOST /result HTTP/1.1[0m" 401 -
+2026-05-03 22:33:23,538 - INFO - 192.168.1.6 - - [03/May/2026 22:33:23] "GET /predict HTTP/1.1" 200 -
+2026-05-03 22:33:23,575 - INFO - 192.168.1.6 - - [03/May/2026 22:33:23] "[36mGET /static/css/predict.css HTTP/1.1[0m" 304 -
+2026-05-03 22:33:33,301 - INFO - 192.168.1.6 - - [03/May/2026 22:33:33] "[31m[1mPOST /result HTTP/1.1[0m" 401 -
+2026-05-03 22:33:40,883 - INFO - 192.168.1.6 - - [03/May/2026 22:33:40] "[31m[1mPOST /result HTTP/1.1[0m" 401 -
+2026-05-03 22:36:24,616 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2026-05-03 22:36:24,617 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-03 22:38:37,876 - INFO - 192.168.1.6 - - [03/May/2026 22:38:37] "GET / HTTP/1.1" 200 -
+2026-05-03 22:38:38,060 - INFO - 192.168.1.6 - - [03/May/2026 22:38:38] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2026-05-03 22:38:38,075 - INFO - 192.168.1.6 - - [03/May/2026 22:38:38] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+2026-05-03 22:38:40,959 - INFO - 192.168.1.6 - - [03/May/2026 22:38:40] "GET /login HTTP/1.1" 200 -
+2026-05-03 22:38:40,997 - INFO - 192.168.1.6 - - [03/May/2026 22:38:40] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2026-05-03 22:38:53,535 - INFO - 192.168.1.6 - - [03/May/2026 22:38:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-03 22:38:53,551 - INFO - 192.168.1.6 - - [03/May/2026 22:38:53] "GET /predict HTTP/1.1" 200 -
+2026-05-03 22:38:53,602 - INFO - 192.168.1.6 - - [03/May/2026 22:38:53] "[36mGET /static/css/predict.css HTTP/1.1[0m" 304 -
+2026-05-03 22:39:02,652 - INFO - 192.168.1.6 - - [03/May/2026 22:39:02] "POST /result HTTP/1.1" 200 -
+2026-05-03 22:47:17,326 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.6:5000
+2026-05-03 22:47:17,327 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-03 22:47:47,436 - INFO - 192.168.1.6 - - [03/May/2026 22:47:47] "GET / HTTP/1.1" 200 -
+2026-05-03 22:47:47,608 - INFO - 192.168.1.6 - - [03/May/2026 22:47:47] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2026-05-03 22:47:47,622 - INFO - 192.168.1.6 - - [03/May/2026 22:47:47] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+2026-05-03 22:47:50,217 - INFO - 192.168.1.6 - - [03/May/2026 22:47:50] "GET /login HTTP/1.1" 200 -
+2026-05-03 22:47:50,259 - INFO - 192.168.1.6 - - [03/May/2026 22:47:50] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+2026-05-03 22:48:00,982 - INFO - 192.168.1.6 - - [03/May/2026 22:48:00] "POST /login HTTP/1.1" 200 -
+2026-05-03 22:48:03,284 - INFO - 192.168.1.6 - - [03/May/2026 22:48:03] "POST /login HTTP/1.1" 200 -
+2026-05-03 22:48:05,946 - INFO - 192.168.1.6 - - [03/May/2026 22:48:05] "GET /login HTTP/1.1" 200 -
+2026-05-03 22:48:14,970 - INFO - 192.168.1.6 - - [03/May/2026 22:48:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-03 22:48:14,986 - INFO - 192.168.1.6 - - [03/May/2026 22:48:14] "GET /predict HTTP/1.1" 200 -
+2026-05-03 22:48:15,032 - INFO - 192.168.1.6 - - [03/May/2026 22:48:15] "[36mGET /static/css/predict.css HTTP/1.1[0m" 304 -
+2026-05-03 22:48:24,878 - INFO - 192.168.1.6 - - [03/May/2026 22:48:24] "POST /result HTTP/1.1" 200 -
+2026-05-03 22:48:24,937 - INFO - 192.168.1.6 - - [03/May/2026 22:48:24] "GET /static/css/result.css HTTP/1.1" 200 -
+2026-05-03 22:48:24,954 - INFO - 192.168.1.6 - - [03/May/2026 22:48:24] "GET /static/js/result.js HTTP/1.1" 200 -
+2026-05-03 22:48:27,367 - INFO - 192.168.1.6 - - [03/May/2026 22:48:27] "GET /predict HTTP/1.1" 200 -
+2026-05-03 22:48:27,410 - INFO - 192.168.1.6 - - [03/May/2026 22:48:27] "[36mGET /static/css/predict.css HTTP/1.1[0m" 304 -
+2026-05-03 22:48:36,340 - INFO - 192.168.1.6 - - [03/May/2026 22:48:36] "POST /result HTTP/1.1" 200 -
+2026-05-03 22:48:36,385 - INFO - 192.168.1.6 - - [03/May/2026 22:48:36] "[36mGET /static/css/result.css HTTP/1.1[0m" 304 -
+2026-05-03 22:48:36,391 - INFO - 192.168.1.6 - - [03/May/2026 22:48:36] "[36mGET /static/js/result.js HTTP/1.1[0m" 304 -
