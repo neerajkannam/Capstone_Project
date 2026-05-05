@@ -100,9 +100,13 @@ def remove_sensitive(data):
 # ================= 🔐 SECURITY HEADERS =================
 @app.after_request
 def add_security_headers(response):
-    response.headers['X-Frame-Options'] = 'DENY'
-    response.headers['X-Content-Type-Options'] = 'nosniff'
-    response.headers['Content-Security-Policy'] = "default-src 'self'"
+    response.headers['Content-Security-Policy'] = (
+        "default-src 'self'; "
+        "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com; "
+        "style-src 'self' 'unsafe-inline' https://unpkg.com; "
+        "img-src 'self' data: https:; "
+        "connect-src 'self';"
+    )
     return response
 
 # ================= 🔑 API KEY =================

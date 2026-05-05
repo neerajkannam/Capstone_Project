@@ -343,3 +343,45 @@ INFO:werkzeug:127.0.0.1 - - [26/Mar/2026 22:31:59] "[36mGET /static/js/charts.j
 2026-05-03 22:48:36,340 - INFO - 192.168.1.6 - - [03/May/2026 22:48:36] "POST /result HTTP/1.1" 200 -
 2026-05-03 22:48:36,385 - INFO - 192.168.1.6 - - [03/May/2026 22:48:36] "[36mGET /static/css/result.css HTTP/1.1[0m" 304 -
 2026-05-03 22:48:36,391 - INFO - 192.168.1.6 - - [03/May/2026 22:48:36] "[36mGET /static/js/result.js HTTP/1.1[0m" 304 -
+2026-05-05 07:56:33,706 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2026-05-05 07:56:33,709 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-05 07:57:15,400 - INFO - 192.168.1.11 - - [05/May/2026 07:57:15] "GET / HTTP/1.1" 200 -
+2026-05-05 07:57:15,639 - INFO - 192.168.1.11 - - [05/May/2026 07:57:15] "GET /static/css/home.css HTTP/1.1" 200 -
+2026-05-05 07:57:15,669 - INFO - 192.168.1.11 - - [05/May/2026 07:57:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-05 07:57:15,671 - INFO - 192.168.1.11 - - [05/May/2026 07:57:15] "GET /static/images/cyber_img.jpeg HTTP/1.1" 200 -
+2026-05-05 07:57:17,894 - INFO - 192.168.1.11 - - [05/May/2026 07:57:17] "GET /login HTTP/1.1" 200 -
+2026-05-05 07:57:17,933 - INFO - 192.168.1.11 - - [05/May/2026 07:57:17] "GET /static/css/login.css HTTP/1.1" 200 -
+2026-05-05 07:57:30,572 - INFO - 192.168.1.11 - - [05/May/2026 07:57:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-05 07:57:30,591 - INFO - 192.168.1.11 - - [05/May/2026 07:57:30] "GET /predict HTTP/1.1" 200 -
+2026-05-05 07:57:30,665 - INFO - 192.168.1.11 - - [05/May/2026 07:57:30] "GET /static/css/predict.css HTTP/1.1" 200 -
+2026-05-05 07:57:50,374 - INFO - 192.168.1.11 - - [05/May/2026 07:57:50] "GET /dashboard HTTP/1.1" 200 -
+2026-05-05 07:57:50,420 - INFO - 192.168.1.11 - - [05/May/2026 07:57:50] "GET /static/css/dashboard.css HTTP/1.1" 200 -
+2026-05-05 07:57:50,435 - INFO - 192.168.1.11 - - [05/May/2026 07:57:50] "GET /static/js/alerts.js HTTP/1.1" 200 -
+2026-05-05 07:57:50,446 - INFO - 192.168.1.11 - - [05/May/2026 07:57:50] "GET /static/js/charts.js HTTP/1.1" 200 -
+2026-05-05 08:05:00,514 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2026-05-05 08:05:00,515 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-05 08:06:23,861 - INFO - 192.168.1.11 - - [05/May/2026 08:06:23] "GET / HTTP/1.1" 200 -
+2026-05-05 08:06:24,095 - INFO - 192.168.1.11 - - [05/May/2026 08:06:24] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2026-05-05 08:06:24,141 - INFO - 192.168.1.11 - - [05/May/2026 08:06:24] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+2026-05-05 08:06:26,127 - INFO - 192.168.1.11 - - [05/May/2026 08:06:26] "GET /dashboard HTTP/1.1" 200 -
+2026-05-05 08:06:26,177 - INFO - 192.168.1.11 - - [05/May/2026 08:06:26] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+2026-05-05 08:06:26,198 - INFO - 192.168.1.11 - - [05/May/2026 08:06:26] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
+2026-05-05 08:06:26,216 - INFO - 192.168.1.11 - - [05/May/2026 08:06:26] "[36mGET /static/js/alerts.js HTTP/1.1[0m" 304 -
+2026-05-05 08:13:06,833 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2026-05-05 08:13:06,834 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-05 08:13:51,344 - INFO - 192.168.1.11 - - [05/May/2026 08:13:51] "GET / HTTP/1.1" 200 -
+2026-05-05 08:13:51,536 - INFO - 192.168.1.11 - - [05/May/2026 08:13:51] "[36mGET /static/css/home.css HTTP/1.1[0m" 304 -
+2026-05-05 08:13:51,558 - INFO - 192.168.1.11 - - [05/May/2026 08:13:51] "[36mGET /static/images/cyber_img.jpeg HTTP/1.1[0m" 304 -
+2026-05-05 08:13:54,127 - INFO - 192.168.1.11 - - [05/May/2026 08:13:54] "GET /dashboard HTTP/1.1" 200 -
+2026-05-05 08:13:54,168 - INFO - 192.168.1.11 - - [05/May/2026 08:13:54] "[36mGET /static/css/dashboard.css HTTP/1.1[0m" 304 -
+2026-05-05 08:13:54,179 - INFO - 192.168.1.11 - - [05/May/2026 08:13:54] "[36mGET /static/js/alerts.js HTTP/1.1[0m" 304 -
+2026-05-05 08:13:54,182 - INFO - 192.168.1.11 - - [05/May/2026 08:13:54] "[36mGET /static/js/charts.js HTTP/1.1[0m" 304 -
